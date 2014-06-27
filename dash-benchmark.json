@@ -1,0 +1,60 @@
+{
+    "name": "thrift",
+    "changelog": [],
+    "tests": [
+        {
+            "name": "serialize_binary",
+            "sourceFiles": [
+                "thrift/base.d",
+                "thrift/codegen/base.d",
+                "thrift/internal/endian.d",
+                "thrift/internal/codegen.d",
+                "thrift/protocol/base.d",
+                "thrift/transport/base.d",
+                "thrift/transport/memory.d",
+                "thrift/transport/range.d",
+                "thrift/util/hashset.d",
+                "DebugProtoTest_types.d",
+                "serialization_benchmark.d",
+                "thrift/protocol/binary.d"
+            ],
+            "versionDefines": ["ThriftBenchmarkBinary"]
+        },
+        {
+            "name": "serialize_compact",
+            "sourceFiles": [
+                "thrift/base.d",
+                "thrift/codegen/base.d",
+                "thrift/internal/endian.d",
+                "thrift/internal/codegen.d",
+                "thrift/protocol/base.d",
+                "thrift/transport/base.d",
+                "thrift/transport/memory.d",
+                "thrift/transport/range.d",
+                "thrift/util/hashset.d",
+                "DebugProtoTest_types.d",
+                "serialization_benchmark.d",
+                "thrift/protocol/compact.d"
+            ],
+            "versionDefines": ["ThriftBenchmarkCompact"]
+        },
+        {
+            "name": "serialize_json",
+            "sourceFiles": [
+                "thrift/base.d",
+                "thrift/codegen/base.d",
+                "thrift/internal/endian.d",
+                "thrift/internal/codegen.d",
+                "thrift/protocol/base.d",
+                "thrift/transport/base.d",
+                "thrift/transport/memory.d",
+                "thrift/transport/range.d",
+                "thrift/util/hashset.d",
+                "DebugProtoTest_types.d",
+                "serialization_benchmark.d",
+                "thrift/protocol/json.d"
+            ],
+            "versionDefines": ["ThriftBenchmarkJson"]
+        },
+    ]
+}
