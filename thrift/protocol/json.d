@@ -61,7 +61,7 @@ final class TJsonProtocol(Transport = TTransport) if (
   }
 
   void reset() {
-    contextStack_.clear();
+    contextStack_ = null;
     context_ = new Context();
     reader_ = new LookaheadReader(trans_);
   }
